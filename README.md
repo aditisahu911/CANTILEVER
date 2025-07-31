@@ -39,7 +39,7 @@ Each model was evaluated using:
 | Random Forest (max_depth=12)  | 0.59      | 0.81   | 0.68     | 0.9718 |
 
 
-## observations
+## Observations
 
 - **Logistic Regression** has high recall, which means it's good at identifying frauds, but its precision is low — many false positives.
 - **Random Forest** (even without tuning) balances precision and recall well.
