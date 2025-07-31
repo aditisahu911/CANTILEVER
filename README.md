@@ -2,14 +2,10 @@
 
 This project focuses on detecting fraudulent credit card transactions using machine learning techniques — primarily Logistic Regression and Random Forest — on an imbalanced dataset. The goal is to accurately identify fraud cases without being misled by the class imbalance, which is common in real-world fraud detection scenarios.
 
----
-
 ## Context
 
 Fraudulent credit card transactions are a serious concern for financial institutions and customers. Early and accurate detection is essential to minimize financial losses and maintain trust.  
 In this project, I’ve implemented anomaly detection and classification models to predict whether a transaction is fraudulent or not, keeping in mind the imbalance in the dataset.
-
----
 
 ## Content
 
@@ -23,8 +19,6 @@ All features except `Time` and `Amount` have been transformed using PCA for conf
 
 Due to the extreme imbalance, evaluation metrics like **Precision**, **Recall**, **F1-score**, and **AUC** are more informative than simple accuracy.
 
----
-
 ## Models Used
 
 - Logistic Regression  
@@ -36,9 +30,7 @@ Each model was evaluated using:
 - Classification Report
 - ROC Curve and AUC Score
 
----
-
-## Fraud Class - Model Performance Summary
+## Model Performance Summary
 
 | Model                          | Precision | Recall | F1-score | AUC   |
 |-------------------------------|-----------|--------|----------|--------|
@@ -46,9 +38,11 @@ Each model was evaluated using:
 | Random Forest (default)       | 0.87      | 0.79   | 0.83     | 0.8951 |
 | Random Forest (max_depth=12)  | 0.59      | 0.81   | 0.68     | 0.9718 |
 
----
 
-## 🔍 Key Observations
+## observations
 
 - **Logistic Regression** has high recall, which means it's good at identifying frauds, but its precision is low — many false positives.
-- **Random Forest** (ev
+- **Random Forest** (even without tuning) balances precision and recall well.
+- **Tuned Random Forest** performs the best overall — especially in terms of AUC and F1-score — making it suitable for this use case.
+
+
