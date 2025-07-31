@@ -1,17 +1,17 @@
-# 💳 Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
 This project focuses on detecting fraudulent credit card transactions using machine learning techniques — primarily Logistic Regression and Random Forest — on an imbalanced dataset. The goal is to accurately identify fraud cases without being misled by the class imbalance, which is common in real-world fraud detection scenarios.
 
 ---
 
-## 🔍 Context
+## Context
 
 Fraudulent credit card transactions are a serious concern for financial institutions and customers. Early and accurate detection is essential to minimize financial losses and maintain trust.  
 In this project, I’ve implemented anomaly detection and classification models to predict whether a transaction is fraudulent or not, keeping in mind the imbalance in the dataset.
 
 ---
 
-## 📚 Content
+## Content
 
 - **Dataset Source**: Real-world credit card transactions made by European cardholders in September 2013.
 - **Total Transactions**: 284,807  
@@ -25,7 +25,7 @@ Due to the extreme imbalance, evaluation metrics like **Precision**, **Recall**,
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 - Logistic Regression  
 - Random Forest (default settings)  
@@ -38,7 +38,7 @@ Each model was evaluated using:
 
 ---
 
-## 📊 Fraud Class - Model Performance Summary
+## Fraud Class - Model Performance Summary
 
 | Model                          | Precision | Recall | F1-score | AUC   |
 |-------------------------------|-----------|--------|----------|--------|
